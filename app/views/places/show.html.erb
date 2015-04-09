@@ -38,6 +38,21 @@
   </div>
 </div>
 
+<div class="row">
+  <div class="col-md-6">
+    <h3>Nearby Places</h3>
+    <ul style="list-style-type: none;">
+      <% for place in @place.nearbys(5) %>
+        <li><%= link_to place.name, place %></li>
+      <% end %>
+    </ul>
+  </div>
+
+  <div class="col-md-6">
+    <h3>Nearby Events</h3>
+  </div>
+</div>
+
  <script type="text/javascript">
       function initialize() {
         var myCenter = {
