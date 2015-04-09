@@ -1,5 +1,12 @@
 <h1>Super Fun Places To Explore</h1>
 
+<%= form_tag places_path, :method => :get do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search Near", :name => nil %>
+  </p>
+<% end %>
+
 <table class="table">
   <thead>
     <tr>
