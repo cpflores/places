@@ -1,22 +1,22 @@
-<h1>Listing Places</h1>
+<h1>Super Fun Places To Explore</h1>
 
 <table class="table">
   <thead>
     <tr>
       <th>Name</th>
       <th>Address</th>
-      <th>Phone</th>
       <th>Website</th>
+      <th>Phone</th>
     </tr>
   </thead>
 
   <tbody>
     <% @places.each do |place| %>
       <tr>
-        <td><%= place.name %></td>
+        <td><%= link_to place.name, place %></td>
         <td><%= place.address %></td>
-        <td><%= place.phone %></td>
         <td><%= place.website %></td>
+        <td><%= place.phone %></td>
       </tr>
     <% end %>
   </tbody>
