@@ -29,6 +29,7 @@ gem 'simple_form', '~> 3.1.0'
 gem 'devise', '~> 3.4.1'
 gem 'gravatarify', '~> 3.1.1'
 gem 'geocoder', '~> 1.2.8'
+#gem 'gmaps4rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
