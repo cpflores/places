@@ -5,11 +5,7 @@ class PlacesController < ApplicationController
   # GET /places
   # GET /places.json
   def index
-    if params[:search].present?
-      @places = Place.near(params[:search], 10)
-    else
-      @places = Place.all
-    end
+    @places = Place.search(params[:search])
   end
 
   # GET /places/1
